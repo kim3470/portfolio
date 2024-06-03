@@ -74,8 +74,8 @@ export default function About() {
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
               I'm passionate about weightlifting, nutrition, cool streetwear-esque
-              style, and running 🏃. I'm an American boy, born and raised, with 
-              Korean culture in my veins. You can find 
+              style, and running 🏃. I'm an American boy, born and raised, with
+              Korean culture in my veins. You can find
             </p>
             <p>
               {`paragraph 2 - skills`}
@@ -88,14 +88,14 @@ export default function About() {
         <div className="lg:pl-20">
           <ul role="list">
             <SocialLink
-              href="https://github.com/AmitMirgal"
+              href="https://github.com/kim3470"
               icon={GitHubIcon}
               className="mt-4"
             >
               My projects on GitHub 😼
             </SocialLink>
             <SocialLink
-              href="https://www.linkedin.com/in/amit-mirgal/"
+              href="https://www.linkedin.com/in/akim0928/"
               icon={LinkedInIcon}
               className="mt-4"
             >
