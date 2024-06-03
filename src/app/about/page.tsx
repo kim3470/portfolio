@@ -69,12 +69,12 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Hey, I'm Aaron 😎😼
+            Hey, I&apos;m Aaron 😎😼
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I'm passionate about weightlifting, nutrition, cool streetwear-esque
-              style, and running 🏃. I'm an American boy, born and raised, with
+              I&apos;m passionate about weightlifting, nutrition, cool streetwear-esque
+              style, and running 🏃. I&apos;m an American boy, born and raised, with
               Korean culture in my veins. You can find
             </p>
             <p>
