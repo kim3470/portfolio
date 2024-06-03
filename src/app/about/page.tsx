@@ -50,7 +50,7 @@ function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'I’m Amit Mirgal. I live in Ontario, where I engineer the future.',
+    'Hey, I\'m Aaron 😎😼',
 }
 
 export default function About() {
@@ -69,63 +69,44 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            I’m Amit Mirgal. I live in Ontario, where I engineer the future.
+            Hey, I'm Aaron 😎😼
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I moved from 🇮🇳 to 🇨🇦 in 2016. It was a roller coaster journey and
-              was full of experience. Adapting to a new culture, making new
-              friends, and exploring unfamiliar places were some of the
-              highlights of this adventure. The challenges I faced along the way
-              helped me grow and learn valuable lessons, making the entire
-              journey a memorable chapter in my life.
+              I'm passionate about weightlifting, nutrition, cool streetwear-esque
+              style, and running 🏃. I'm an American boy, born and raised, with 
+              Korean culture in my veins. You can find 
             </p>
             <p>
-              {`I am a Software Engineer who is good at using JavaScript,
-              TypeScript, and React. For the past 8 years, I have been working
-              on creating software. I really like how technology can bring about
-              new and better ways of doing things. I always try to learn new
-              things and get the right qualifications to be a great Software
-              Developer in today's ever-changing tech world.`}
+              {`paragraph 2 - skills`}
             </p>
             <p>
-              {`Building Tapasom - Streamline your
-              marketing efforts with our assistant platform powered by NFT and
-              AI. I'm Software Engineer proficient in JavaScript, React. I've
-              focused on software development, and admires the endless
-              possibilities in innovation and efficiency created through
-              technology.`}
+              {`para 3 - current work`}
             </p>
           </div>
         </div>
         <div className="lg:pl-20">
           <ul role="list">
             <SocialLink
-              href="https://twitter.com/amit_mirgal"
-              icon={TwitterIcon}
-            >
-              Follow on Twitter
-            </SocialLink>
-            <SocialLink
               href="https://github.com/AmitMirgal"
               icon={GitHubIcon}
               className="mt-4"
             >
-              Follow on GitHub
+              My projects on GitHub 😼
             </SocialLink>
             <SocialLink
               href="https://www.linkedin.com/in/amit-mirgal/"
               icon={LinkedInIcon}
               className="mt-4"
             >
-              Follow on LinkedIn
+              Connect with me on LinkedIn! 🔗
             </SocialLink>
             <SocialLink
-              href="mailto:amit.s.mirgal@gmail.com"
+              href="mailto:aaronkim0928@gmail.com"
               icon={MailIcon}
               className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
             >
-              amit.s.mirgal@gmail.com
+              aaronkim0928@gmail.com
             </SocialLink>
           </ul>
         </div>
