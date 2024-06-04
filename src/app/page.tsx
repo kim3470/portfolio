@@ -5,7 +5,7 @@ import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
-import { GitHubIcon, LinkedInIcon, TwitterIcon } from '@/components/SocialIcons'
+import { GitHubIcon, LinkedInIcon, InstagramIcon } from '@/components/SocialIcons'
 
 import awsLogo from '@/images/logos/awslogo.jpeg'
 import image1 from '@/images/photos/image-1.jpg'
@@ -154,31 +154,31 @@ function Role({ role }: { role: Role }) {
   )
 }
 
-// function Resume() {
-//   let resume: Array<Role> = [
-//     {
-//       company: 'Amazon Web Services (AWS)',
-//       title: 'Software Development Engineer Intern',
-//       logo: awsLogo,
-//       start: 'May 2023',
-//       end: 'July 2023',
-//     },
-//   ]
+function Resume() {
+  let resume: Array<Role> = [
+    {
+      company: 'Amazon Web Services (AWS)',
+      title: 'Software Development Engineer Intern',
+      logo: awsLogo,
+      start: 'May 2023',
+      end: 'July 2023',
+    },
+  ]
 
-//   return (
-//     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-//       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-//         <BriefcaseIcon className="h-6 w-6 flex-none" />
-//         <span className="ml-3">Experience</span>
-//       </h2>
-//       <ol className="mt-6 space-y-4">
-//         {resume.map((role, roleIndex) => (
-//           <Role key={roleIndex} role={role} />
-//         ))}
-//       </ol>
-//     </div>
-//   )
-// }
+  return (
+    <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
+      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+        <BriefcaseIcon className="h-6 w-6 flex-none" />
+        <span className="ml-3">Experience</span>
+      </h2>
+      <ol className="mt-6 space-y-4">
+        {resume.map((role, roleIndex) => (
+          <Role key={roleIndex} role={role} />
+        ))}
+      </ol>
+    </div>
+  )
+}
 
 function Photos() {
   let rotations = ['rotate-3', '-rotate-3', 'rotate-2', '-rotate-3', 'rotate-3', '-rotate-2']
@@ -191,7 +191,7 @@ function Photos() {
             key={image.src}
             className={clsx(
               rotations[imageIndex % rotations.length],
-              'relative aspect-[9/16] hover:animate-wiggle animate-fill-both w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-60 sm:rounded-2xl',
+              'relative aspect-[9/16] hover:animate-wiggle w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-60 sm:rounded-2xl',
             )}
           >
             <Image
@@ -225,13 +225,18 @@ export default async function Home() {
           <div className="mt-6 flex gap-6">
             <SocialLink
               href="https://github.com/kim3470"
-              aria-label="Check out my stuff on GitHub"
+              aria-label="Check out my stuff on GitHub 😺"
               icon={GitHubIcon}
             />
             <SocialLink
               href="https://www.linkedin.com/in/akim0928"
-              aria-label="Connect with me on LinkedIn"
+              aria-label="Connect with me on LinkedIn 🔗"
               icon={LinkedInIcon}
+            />
+            <SocialLink
+              href="https://www.instagram.com/aaron.wkim/"
+              aria-label="Follow me on Instagram 📸"
+              icon={InstagramIcon}
             />
           </div>
         </div>

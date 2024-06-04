@@ -14,21 +14,6 @@ const projects = [
     link: { href: 'http://tapasom.com', label: 'tapasom.com' },
     logo: logoTapasom,
   },
-  {
-    name: 'Cleversh Inc',
-    description: `Cleversh has a collection of carefully crafted to capture the essence of India's rich and diverse culture and to evoke feelings of warmth, and happiness.`,
-    link: { href: 'https://clevershinc.com', label: 'clevershinc.com' },
-    logo: logoCleversh,
-  },
-  {
-    name: 'XRPL nftoupon',
-    description: `NFT-based loyalty program that enables customer to explore coupons created by different merchants to mint new NFTs and send them to a customer's wallet.`,
-    link: {
-      href: 'https://xrplgrants.org/grantees?query=nftoupon',
-      label: 'nftoupon',
-    },
-    logo: logoXRPL,
-  },
 ]
 
 function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
@@ -44,14 +29,15 @@ function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 export const metadata: Metadata = {
   title: 'Projects',
-  description: 'Things I’ve made trying to put my dent in the universe.',
+  description: 'Some of the stuff I made in my free time 😲',
 }
 
 export default function Projects() {
   return (
     <SimpleLayout
-      title="I've created things in an attempt to make a difference in the world."
-      intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of."
+      title="Some of the stuff I made in my free time 😲"
+      intro="Here are some of the projects I've worked on (or am working on currently 😜). Click on any of the entries to 
+            take you to the corresponding repository!"
     >
       <ul
         role="list"

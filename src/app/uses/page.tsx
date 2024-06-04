@@ -1,3 +1,5 @@
+// personal software and hardware section (unused currently)
+
 import { Card } from '@/components/Card'
 import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'

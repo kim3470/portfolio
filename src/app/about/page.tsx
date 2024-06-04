@@ -8,7 +8,6 @@ import {
   GitHubIcon,
   InstagramIcon,
   LinkedInIcon,
-  TwitterIcon,
 } from '@/components/SocialIcons'
 import portraitImage from '@/images/portrait.jpg'
 
@@ -73,15 +72,28 @@ export default function About() {
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I&apos;m passionate about weightlifting, nutrition, cool streetwear-esque
-              style, and running 🏃. I&apos;m an American boy, born and raised, with
-              Korean culture in my veins. You can find
+              My parents moved to Texas from Seoul around 1999. I was born there, in 2001, 
+              in a small town called Tomball, around a 40 minute drive from Houston. 
+              Before Katrina passed through, we moved up to Chicago, where I've been ever since.
+              Despite having been raised nearly my whole life in the Chicagoland area, I&apos;ve always
+              imagined what it would be like to live elsewhere (I'm open to relocation!) 🏙️ 
             </p>
             <p>
-              {`paragraph 2 - skills`}
+              I attended Purdue University for my undergraduate degree, graduating recently with a B.S in 
+              Computer Science and a concentration in software engineering. During my time as a student I also
+              interned at Argonne National Laboratories and Amazon Web Services 🌐. I&apos;m passionate about 
+              cloud computing, database systems, and tool development.
             </p>
             <p>
-              {`para 3 - current work`}
+              Aside from programming, I&apos;m passionate about weightlifting 🏋️, nutrition 🍖,
+              cool fashion 👖, and running 🏃. No matter what life throws at me, these four
+              interests remain a key part of my life. I always prepare meals on the weekends and 
+              find time in each and every day to fit in a lift and a run.
+            </p>
+            <p>
+              Currently, I'm seeking a new-grad or entry-level software engineering position. I'm more
+              seasoned as a backend engineer, but would be open to full-stack as well. Please feel free to 
+              reach out to me, for any reason!
             </p>
           </div>
         </div>
@@ -100,6 +112,13 @@ export default function About() {
               className="mt-4"
             >
               Connect with me on LinkedIn! 🔗
+            </SocialLink>
+            <SocialLink
+              href="https://www.instagram.com/aaron.wkim/"
+              icon={InstagramIcon}
+              className="mt-4"
+            >
+              Follow me on Instagram! 📸
             </SocialLink>
             <SocialLink
               href="mailto:aaronkim0928@gmail.com"

@@ -10,7 +10,7 @@ export default {
   theme: {
     extend: {
       animation: {
-        wiggle: 'wiggle 1.5s ease-in-out infinite',
+        wiggle: 'wiggle 1s infinite',
         fade: 'fade-up 1s ease-out normal'
       }
     },
