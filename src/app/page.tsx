@@ -154,44 +154,44 @@ function Role({ role }: { role: Role }) {
   )
 }
 
-function Resume() {
-  let resume: Array<Role> = [
-    {
-      company: 'Amazon Web Services (AWS)',
-      title: 'Software Development Engineer Intern',
-      logo: awsLogo,
-      start: 'May 2023',
-      end: 'July 2023',
-    },
-  ]
+// function Resume() {
+//   let resume: Array<Role> = [
+//     {
+//       company: 'Amazon Web Services (AWS)',
+//       title: 'Software Development Engineer Intern',
+//       logo: awsLogo,
+//       start: 'May 2023',
+//       end: 'July 2023',
+//     },
+//   ]
 
-  return (
-    <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <BriefcaseIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Experience</span>
-      </h2>
-      <ol className="mt-6 space-y-4">
-        {resume.map((role, roleIndex) => (
-          <Role key={roleIndex} role={role} />
-        ))}
-      </ol>
-    </div>
-  )
-}
+//   return (
+//     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
+//       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+//         <BriefcaseIcon className="h-6 w-6 flex-none" />
+//         <span className="ml-3">Experience</span>
+//       </h2>
+//       <ol className="mt-6 space-y-4">
+//         {resume.map((role, roleIndex) => (
+//           <Role key={roleIndex} role={role} />
+//         ))}
+//       </ol>
+//     </div>
+//   )
+// }
 
 function Photos() {
-  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2', 'rotate-2']
+  let rotations = ['rotate-3', '-rotate-3', 'rotate-2', '-rotate-3', 'rotate-3', '-rotate-2']
 
   return (
     <div className="mt-16 sm:mt-20">
-      <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
+      <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-10">
         {[image1, image2, image4, image3, image5, image6].map((image, imageIndex) => (
           <div
             key={image.src}
             className={clsx(
-              'relative aspect-[9/16] hover:animate-wiggle w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
               rotations[imageIndex % rotations.length],
+              'relative aspect-[9/16] hover:animate-wiggle animate-fill-both w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-60 sm:rounded-2xl',
             )}
           >
             <Image
@@ -237,18 +237,18 @@ export default async function Home() {
         </div>
       </Container>
       <Photos />
-      <Container className="mt-24 md:mt-28">
+      {/* <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          {/* <div className="flex flex-col gap-16">
+          <div className="flex flex-col gap-16">
             {articles.map((article) => (
               <Article key={article.slug} article={article} />
             ))}
-          </div> */}
+          </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Resume />
           </div>
         </div>
-      </Container>
+      </Container> */}
     </>
   )
 }

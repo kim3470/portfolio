@@ -6,8 +6,14 @@ import typographyStyles from './typography'
 export default {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   darkMode: 'class',
-  plugins: [typographyPlugin],
+  plugins: [typographyPlugin, require('tailwindcss-animated')],
   theme: {
+    extend: {
+      animation: {
+        wiggle: 'wiggle 1.5s ease-in-out infinite',
+        fade: 'fade-up 1s ease-out normal'
+      }
+    },
     fontSize: {
       xs: ['0.8125rem', { lineHeight: '1.5rem' }],
       sm: ['0.875rem', { lineHeight: '1.5rem' }],
@@ -24,8 +30,5 @@ export default {
       '9xl': ['8rem', { lineHeight: '1' }],
     },
     typography: typographyStyles,
-    animation: {
-      wiggle: 'wiggle 1s ease-in-out infinite'
-    },
   },
 } satisfies Config
