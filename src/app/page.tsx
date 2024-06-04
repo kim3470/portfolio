@@ -5,8 +5,7 @@ import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
-import { GitHubIcon, LinkedInIcon, InstagramIcon } from '@/components/SocialIcons'
-
+import { GitHubIcon, LinkedInIcon, InstagramIcon, ResumeIcon } from '@/components/SocialIcons'
 import awsLogo from '@/images/logos/awslogo.jpeg'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
@@ -239,6 +238,12 @@ export default async function Home() {
               aria-label="Follow me on Instagram 📸"
               icon={InstagramIcon}
             />
+            <SocialLink
+              href="https://drive.google.com/file/d/1KMZz8Jn1ZU7gFyTZyhcQrLdWIKIiQzBM/view?usp=drive_link"
+              aria-label="My resume 📄"
+              icon={ResumeIcon}
+            />
+
           </div>
         </div>
       </Container>

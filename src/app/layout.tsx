@@ -10,7 +10,7 @@ let siteUrl = process.env.NEXT_PUBLIC_SITE_URL
 export const metadata: Metadata = {
   title: {
     template: '%s - Aaron Kim',
-    default: 'Aaron Kim - Tall Handsome Software Engineer',
+    default: 'Aaron Kim',
   },
   description: `I'm a software engineer who prides himself in his sense of
                 humor (it's pretty elite). I'm a fast learner and my wit is

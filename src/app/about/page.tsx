@@ -8,6 +8,7 @@ import {
   GitHubIcon,
   InstagramIcon,
   LinkedInIcon,
+  ResumeIcon,
 } from '@/components/SocialIcons'
 import portraitImage from '@/images/portrait.jpg'
 
@@ -91,7 +92,7 @@ export default function About() {
               find time in each and every day to fit in a lift and a run.
             </p>
             <p>
-              Currently, I&apos;m seeking a new-grad or entry-level software engineering position. I&apos;m more
+              Currently, I&apos;m seeking a new-grad or entry-level software end gineering position. I&apos;m more
               seasoned as a backend engineer, but would be open to full-stack as well. Please feel free to 
               reach out to me, for any reason!
             </p>
@@ -119,6 +120,13 @@ export default function About() {
               className="mt-4"
             >
               Follow me on Instagram! 📸
+            </SocialLink>
+            <SocialLink
+              href="https://drive.google.com/file/d/1KMZz8Jn1ZU7gFyTZyhcQrLdWIKIiQzBM/view?usp=drive_link"
+              icon={ResumeIcon}
+              className="mt-4"
+            >
+              My resume 📄
             </SocialLink>
             <SocialLink
               href="mailto:aaronkim0928@gmail.com"
