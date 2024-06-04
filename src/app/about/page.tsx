@@ -74,9 +74,9 @@ export default function About() {
             <p>
               My parents moved to Texas from Seoul around 1999. I was born there, in 2001, 
               in a small town called Tomball, around a 40 minute drive from Houston. 
-              Before Katrina passed through, we moved up to Chicago, where I've been ever since.
+              Before Katrina passed through, we moved up to Chicago, where I&apos;ve been ever since.
               Despite having been raised nearly my whole life in the Chicagoland area, I&apos;ve always
-              imagined what it would be like to live elsewhere (I'm open to relocation!) 🏙️ 
+              imagined what it would be like to live elsewhere (I&apos;m open to relocation!) 🏙️ 
             </p>
             <p>
               I attended Purdue University for my undergraduate degree, graduating recently with a B.S in 
@@ -91,7 +91,7 @@ export default function About() {
               find time in each and every day to fit in a lift and a run.
             </p>
             <p>
-              Currently, I'm seeking a new-grad or entry-level software engineering position. I'm more
+              Currently, I&apos;m seeking a new-grad or entry-level software engineering position. I&apos;m more
               seasoned as a backend engineer, but would be open to full-stack as well. Please feel free to 
               reach out to me, for any reason!
             </p>
