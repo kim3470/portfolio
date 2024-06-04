@@ -7,18 +7,13 @@ import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import { GitHubIcon, LinkedInIcon, TwitterIcon } from '@/components/SocialIcons'
 
-import logoPayPal from '@/images/logos/PayPallogo.jpeg'
-import logoBodhi from '@/images/logos/bodhiLogo.jpeg'
-import logoUofT from '@/images/logos/UofTLogo.jpeg'
-import logoCandidly from '@/images/logos/candidly_logo.jpeg'
-import logoRbc from '@/images/logos/RBClogo.jpeg'
-import logoMinistry from '@/images/logos/OntarioLogo.jpeg'
-import logoNseit from '@/images/logos/nseit_logo.jpeg'
+import awsLogo from '@/images/logos/awslogo.jpeg'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
+import image6 from '@/images/photos/image-6.jpg'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 
@@ -162,63 +157,11 @@ function Role({ role }: { role: Role }) {
 function Resume() {
   let resume: Array<Role> = [
     {
-      company: 'PayPal',
-      title: 'Software Engineer',
-      logo: logoPayPal,
-      start: 'Nov 2020',
-      end: {
-        label: 'Present',
-        dateTime: new Date().getFullYear().toString(),
-      },
-    },
-    {
-      company: 'Bodhi',
-      title: 'Sr. Software Engineer',
-      logo: logoBodhi,
-      start: 'Aug 2023',
-      end: 'Mar 2023',
-    },
-    {
-      company: 'UofT',
-      title: 'Assistant Instructor',
-      logo: logoUofT,
-      start: 'Nov 2020',
-      end: 'Aug 2022',
-    },
-    {
-      company: 'Candidly',
-      title: 'Software Engineer',
-      logo: logoCandidly,
-      start: 'Apr 2020',
-      end: 'Nov 2020',
-    },
-    {
-      company: 'RBC Capital Markets',
-      title: 'Full Stack Engineer',
-      logo: logoRbc,
-      start: 'Apr 2019',
-      end: 'Mar 2020',
-    },
-    {
-      company: 'RBC',
-      title: 'Data Engineer',
-      logo: logoRbc,
-      start: 'Feb 2018',
-      end: 'Mar 2019',
-    },
-    {
-      company: 'Ontario Mistry of Education',
-      title: 'Programmer Analyst',
-      logo: logoMinistry,
-      start: 'Mar 2017',
-      end: 'Sept 2017',
-    },
-    {
-      company: 'NseiT',
-      title: 'Assoc. System Analyst',
-      logo: logoNseit,
-      start: 'Nov 2013',
-      end: 'Dec 2015',
+      company: 'Amazon Web Services (AWS)',
+      title: 'Software Development Engineer Intern',
+      logo: awsLogo,
+      start: 'May 2023',
+      end: 'July 2023',
     },
   ]
 
@@ -226,7 +169,7 @@ function Resume() {
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Work</span>
+        <span className="ml-3">Experience</span>
       </h2>
       <ol className="mt-6 space-y-4">
         {resume.map((role, roleIndex) => (
@@ -238,24 +181,25 @@ function Resume() {
 }
 
 function Photos() {
-  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
+  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2', 'rotate-2']
 
   return (
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
+        {[image1, image2, image4, image3, image5, image6].map((image, imageIndex) => (
           <div
             key={image.src}
             className={clsx(
-              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
+              'relative aspect-[9/16] hover:animate-wiggle w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
               rotations[imageIndex % rotations.length],
             )}
           >
             <Image
               src={image}
               alt=""
-              sizes="(min-width: 640px) 18rem, 11rem"
+              sizes="(min-width: 640px) 16rem, 9rem"
               className="absolute inset-0 h-full w-full object-cover"
+              unoptimized
             />
           </div>
         ))}
@@ -275,12 +219,8 @@ export default async function Home() {
             Software engineer.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            {`Software Engineer proficient in JavaScript, TypeScript, React. Over
-            the last 8 years, I've focused on software development, and admires
-            the endless possibilities in innovation and efficiency created
-            through technology. I continuously challenge to acquire the
-            appropriate credentials, skills, and experiences as a Software
-            Developer to excel in today’s dynamic technology industry.`}
+            {`I'm a software engineer with a focus on backend development. I've worked at AWS, Argonne,
+              and I've graduated from Purdue with a B.S in CS.`}
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -299,11 +239,11 @@ export default async function Home() {
       <Photos />
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          <div className="flex flex-col gap-16">
+          {/* <div className="flex flex-col gap-16">
             {articles.map((article) => (
               <Article key={article.slug} article={article} />
             ))}
-          </div>
+          </div> */}
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Resume />
           </div>

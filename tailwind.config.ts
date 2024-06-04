@@ -24,5 +24,8 @@ export default {
       '9xl': ['8rem', { lineHeight: '1' }],
     },
     typography: typographyStyles,
+    animation: {
+      wiggle: 'wiggle 1s ease-in-out infinite'
+    },
   },
 } satisfies Config
