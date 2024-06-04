@@ -3,16 +3,38 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoTapasom from '@/images/logos/logo.png'
-import logoCleversh from '@/images/logos/cleversh.png'
-import logoXRPL from '@/images/logos/XRP_logo.jpeg'
+import shellLogo from '@/images/logos/shell.png'
+import serverLogo from '@/images/logos/webserver.jpg'
+import titanLogo from '@/images/logos/ontrack.jpeg'
+import ontrackLogo from '@/images/logos/titan.png'
+
 
 const projects = [
   {
-    name: 'Tapasom',
-    description: `Tapasom is a no-code tool that helps small to medium sized businesses sell, manage, and grow their sales - all in one place.`,
-    link: { href: 'http://tapasom.com', label: 'tapasom.com' },
-    logo: logoTapasom,
+    name: 'Shell Clone',
+    description: `A Shell clone written in C, C++, Lex, Yacc, and Python and based on bash. Features include basic command execution, tab completion, raw edit mode, pipes,
+ control-c, quotes, subshells, builtin functions, zombie elimination, wildcards, line editing, and expansions.`,
+    link: { href: 'https://github.com/kim3470/myshell', label: 'Github Repository' },
+    logo: shellLogo,
+  },
+  {
+    name: 'HTTP Web Server',
+    description: `A clone of Apache’s HTTPD web server written in C/C++ that includes HTTP requests, file system navigation, image loading, and multiple
+ simultaneous client connections.`,
+    link: { href: 'https://github.com/kim3470/myhttpd', label: 'Github Repository' },
+    logo: serverLogo,
+  },
+  {
+    name: 'OnTrack',
+    description: `A fully-featured nutrition, exercise, and general health tracking mobile app, written in Flutter with Node.js, MongoDB and Express on the backend`,
+    link: { href: 'https://github.com/youngbryanyu/OnTrack', label: 'Github Repository' },
+    logo: titanLogo,
+  },
+  {
+    name: 'Titan',
+    description: `Initial webapp that turned into OnTrack. Nutrition, exercise, and general health tracking done in the MERN stack.`,
+    link: { href: 'https://github.com/youngbryanyu/titan-health-app', label: 'Github Repository' },
+    logo: ontrackLogo,
   },
 ]
 
@@ -36,8 +58,9 @@ export default function Projects() {
   return (
     <SimpleLayout
       title="Some of the stuff I made in my free time 😲"
-      intro="Here are some of the projects I've worked on (or am working on currently 😜). Click on any of the entries to 
-            take you to the corresponding repository!"
+      intro="Here are some of the projects I've worked on (or am working on currently). 
+            Click on any of the entries to take you to the corresponding repository!
+            For more, visit my Github!"
     >
       <ul
         role="list"

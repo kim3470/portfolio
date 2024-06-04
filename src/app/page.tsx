@@ -216,11 +216,12 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software engineer.
+            {`Hi, I'm Aaron :) Welcome to my site!`}
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            {`I'm a software engineer with a focus on backend development. I've worked at AWS, Argonne,
-              and I've graduated from Purdue with a B.S in CS.`}
+            {`My name is Aaron Kim, and I'm a recent software engineering graduate from Purdue.
+            Here you'll find my experiences, links to my socials, my projects on Github,
+            and you'll also find out a little bit about me. I hope you enjoy your stay 😁`}
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
