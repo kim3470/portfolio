@@ -92,7 +92,7 @@ export default function About() {
               find time in each and every day to fit in a lift and a run.
             </p>
             <p>
-              Currently, I&apos;m seeking a new-grad or entry-level software end gineering position. I&apos;m more
+              Currently, I&apos;m seeking a new-grad or entry-level software engineering position. I&apos;m more
               seasoned as a backend engineer, but would be open to full-stack as well. Please feel free to 
               reach out to me, for any reason!
             </p>
