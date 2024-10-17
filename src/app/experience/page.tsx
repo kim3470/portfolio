@@ -57,6 +57,13 @@ export default function Experiences() {
       <div className="space-y-10">
         <Category title="Experiences">
           <Organization
+            href="https://www.apple.com/"
+            location="Apple"
+            description="Incoming at Apple's IS&T org!!! So excited to see what comes next 😼🍎"
+            timeframe="Starting Nov. 4, Austin"
+            cta="Apple"
+          />
+          <Organization
             href="https://aws.amazon.com/"
             location="Amazon Web Services (AWS) - ASBX internal tools"
             description="Worked on internal tooling at Amazon Software Builder Experiences (ASBX)
