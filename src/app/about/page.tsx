@@ -80,21 +80,19 @@ export default function About() {
               imagined what it would be like to live elsewhere (I&apos;m open to relocation!) 🏙️ 
             </p>
             <p>
-              I attended Purdue University for my undergraduate degree, graduating recently with a B.S in 
+              I attended Purdue University for my undergraduate degree, graduating Dec. 2023 with a B.S in 
               Computer Science and a concentration in software engineering. During my time as a student I also
               interned at Argonne National Laboratories and Amazon Web Services 🌐. I&apos;m passionate about 
               cloud computing, database systems, and tool development.
             </p>
             <p>
               Aside from programming, I&apos;m passionate about weightlifting 🏋️, nutrition 🍖,
-              cool fashion 👖, and running 🏃. No matter what life throws at me, these four
-              interests remain a key part of my life. I always prepare meals on the weekends and 
-              find time in each and every day to fit in a lift and a run.
+              cool fashion 👖, reading 📖, and running 🏃. No matter what life throws at me, I've promised myself that
+              these five interests will always remain a key part of my life.
             </p>
             <p>
-              Currently, I&apos;m seeking a new-grad or entry-level software engineering position. I&apos;m more
-              seasoned as a backend engineer, but would be open to full-stack as well. Please feel free to 
-              reach out to me, for any reason!
+              Currently, I&apos;m working at Apple , a real dream come true :). I&apos;m always looking to improve myself and my skills, however.
+              Please feel free to reach out to me, for any reason!
             </p>
           </div>
         </div>
