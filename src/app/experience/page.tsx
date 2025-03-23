@@ -59,8 +59,8 @@ export default function Experiences() {
           <Organization
             href="https://www.apple.com/"
             location="Apple"
-            description="Incoming at Apple's IS&T org!!! So excited to see what comes next 😼🍎"
-            timeframe="Starting Nov. 4, Austin"
+            description="Working at  as a Software Developer in IS&T, Apple's internal technology organization"
+            timeframe="Nov. 4 - Present, Austin"
             cta="Apple"
           />
           <Organization

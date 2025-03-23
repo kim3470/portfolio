@@ -18,7 +18,7 @@ function Article({ article }: { article: ArticleWithSlug }) {
           className="md:hidden"
           decorate
         >
-          {formatDate(article.date)}
+          {article.date}
         </Card.Eyebrow>
         <Card.Description>{article.description}</Card.Description>
         <Card.Cta>Read article</Card.Cta>
@@ -28,7 +28,7 @@ function Article({ article }: { article: ArticleWithSlug }) {
         dateTime={article.date}
         className="mt-1 hidden md:block"
       >
-        {formatDate(article.date)}
+        {article.date}
       </Card.Eyebrow>
     </article>
   )
@@ -37,7 +37,7 @@ function Article({ article }: { article: ArticleWithSlug }) {
 export const metadata: Metadata = {
   title: 'Articles',
   description:
-    'All of my long-form thoughts on programming, leadership, product design, and more, collected in chronological order.',
+    'An online, public thought log',
 }
 
 export default async function ArticlesIndex() {
@@ -45,8 +45,8 @@ export default async function ArticlesIndex() {
 
   return (
     <SimpleLayout
-      title="Writing on software design, and the side-hustle journey."
-      intro="All of my long-form thoughts on programming, leadership, product design, and more, collected in chronological order."
+      title="A Young Man's Thoughts"
+      intro="Finding a theme for life through writing"
     >
       <div className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
         <div className="flex max-w-3xl flex-col space-y-16">
