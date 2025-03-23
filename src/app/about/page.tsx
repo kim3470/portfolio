@@ -87,7 +87,7 @@ export default function About() {
             </p>
             <p>
               Aside from programming, I&apos;m passionate about weightlifting 🏋️, nutrition 🍖,
-              cool fashion 👖, reading 📖, and running 🏃. No matter what life throws at me, I've promised myself that
+              cool fashion 👖, reading 📖, and running 🏃. No matter what life throws at me, I&apos;ve promised myself that
               these five interests will always remain a key part of my life.
             </p>
             <p>
